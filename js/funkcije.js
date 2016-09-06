@@ -13,8 +13,6 @@ window.onload = function() {
 
         $('.gumbPotrdi').click(function(){
             dodajPremik()
-
-
         });
     });
 };

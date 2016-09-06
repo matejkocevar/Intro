@@ -102,6 +102,9 @@ h6{
 
 .gumbPotrdi{
     border: 0;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 50px;
+    width: 100%;
 }
 
 /*Animacije*/
