@@ -60,7 +60,7 @@ h6{
     border-right: 75px solid transparent;
     border-top: 75px solid black;
     left: 47.5px; /* (300-150-75)/2+10px */
-    top: 75px;
+    top: 85px; /* 75px +10px */
     position: absolute;
     float: left;
     transform: translate(25%,100%);
@@ -72,7 +72,7 @@ h6{
     width: 75px;
     position: absolute;
     right: 47.5px; /* (300-150-75)/2+10px */
-    top: 75px;
+    bottom: 85px; /* 75px +10px */
 }
 .K1{
     width: 0;
