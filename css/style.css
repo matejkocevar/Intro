@@ -1,0 +1,114 @@
+html{
+    font-family: 'Catamaran', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+}
+
+.kontejner{
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.sredina{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vsebina{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+@media (max-width: 767px)  {
+    .vsebina{
+        width: auto;
+    }
+}
+
+.logo{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.okvir{
+    background: url(../img/puzla/okvir.png) no-repeat scroll bottom center;
+    background-size: 100%;
+    height: 100%;
+}
+.M{
+    background: url(../img/puzla/m.png) no-repeat scroll bottom center;
+    background-size: 100%;
+    height: 50%;
+    width: 50%;
+    left: 13%;
+    top: 0;
+    position: relative;
+    float: left;
+    transform: translate(25%,50%);
+    animation: premikM 4s 1s forwards;
+
+}
+
+.K{
+    height: 25%;
+    width: 25%;
+    position: absolute;
+    right: 12%;
+    top: 25%;
+}
+.K1{
+    background: url(../img/puzla/k1.png) no-repeat scroll bottom center;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    float: right;
+    transform: translate(-152%,-5%) rotate(180deg);
+    animation: premikK1 4s 1s forwards;
+}
+.K2 {
+    background: url(../img/puzla/k2.png) no-repeat scroll bottom center;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-48%,-5%);
+    animation: premikK2 4s 1s forwards;
+}
+
+@keyframes premikM {
+    from {
+        transform: translate(25%,50%);
+    }
+    to {
+        transform: translate(0%,0%);
+    }
+}
+@keyframes premikK1 {
+    from {
+        transform: translate(-152%,-5%) rotate(-180deg);
+    }
+    to {
+        transform: translate(0%,0%) rotate(0deg);
+    }
+}
+@keyframes premikK2 {
+    from {
+        transform: translate(-48%,-5%);
+    }
+    to {
+        transform: translate(0%,100%);
+    }
+}
