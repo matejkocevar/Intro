@@ -1,3 +1,6 @@
+/*
+    Matej Kocevar
+*/
 html{
     font-family: 'Catamaran', sans-serif;
 }
@@ -45,53 +48,55 @@ h6{
 }
 
 .okvir{
-    background: url(../img/puzla/okvir.png) no-repeat scroll bottom center;
+    border: 10px solid ;
     background-size: 100%;
-    height: 100%;
+    height: 300px;
+    width: 300px;
 }
 .M{
-    background: url(../img/puzla/m.png) no-repeat scroll bottom center;
-    background-size: 100%;
-    height: 50%;
-    width: 50%;
-    left: 13%;
-    top: 0;
-    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 75px solid black;
+    left: 47.5px; /* (300-150-75)/2+10px */
+    top: 75px;
+    position: absolute;
     float: left;
-    transform: translate(25%,50%);
+    transform: translate(25%,100%);
     animation: premikM 4s 2s forwards;
-
 }
 
 .K{
-    height: 25%;
-    width: 25%;
+    height: 150px;
+    width: 75px;
     position: absolute;
-    right: 12%;
-    top: 25%;
+    right: 47.5px; /* (300-150-75)/2+10px */
+    top: 75px;
 }
 .K1{
-    background: url(../img/puzla/k1.png) no-repeat scroll bottom center;
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 75px solid transparent;
+    border-left: 75px solid black;
     float: right;
-    transform: translate(-152%,-5%) rotate(180deg);
+    transform: translate(-152%,-4%) rotate(180deg); /* 2*2% in 4% odmik */
     animation: premikK1 4s 2s forwards;
 }
 .K2 {
-    background: url(../img/puzla/k2.png) no-repeat scroll bottom center;
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-48%,-5%);
+    width: 0;
+    height: 0;
+    border-bottom: 75px solid transparent;
+    border-left: 75px solid black;
+    float: right;
+    transform: translate(-48%,-104%) rotate(270deg); /* 2*2% in 4% odmik */
     animation: premikK2 4s 2s forwards;
 }
 
 /*Animacije*/
 @keyframes premikM {
     from {
-        transform: translate(25%,50%);
+        transform: translate(25%,100%);
     }
     to {
         transform: translate(0%,0%);
@@ -99,7 +104,7 @@ h6{
 }
 @keyframes premikK1 {
     from {
-        transform: translate(-152%,-5%) rotate(-180deg);
+        transform: translate(-152%,-4%) rotate(180deg);
     }
     to {
         transform: translate(0%,0%) rotate(0deg);
@@ -107,9 +112,9 @@ h6{
 }
 @keyframes premikK2 {
     from {
-        transform: translate(-48%,-5%);
+        transform: translate(-48%,-104%) rotate(270deg);
     }
     to {
-        transform: translate(0%,100%);
+        transform: translate(0%,0%) rotate(270deg);
     }
 }
