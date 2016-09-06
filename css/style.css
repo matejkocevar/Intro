@@ -1,6 +1,6 @@
-/*
-    Matej Kocevar
-*/
+/*** Matej Kocevar ***/
+
+
 html{
     font-family: 'Catamaran', sans-serif;
 }
@@ -64,7 +64,9 @@ h6{
     position: absolute;
     float: left;
     transform: translate(25%,100%);
-    animation: premikM 4s 2s forwards;
+}
+.M.premik{
+    animation: premikM 4s 0s forwards;
 }
 
 .K{
@@ -81,8 +83,11 @@ h6{
     border-left: 75px solid black;
     float: right;
     transform: translate(-152%,-4%) rotate(180deg); /* 2*2% in 4% odmik */
-    animation: premikK1 4s 2s forwards;
 }
+.K1.premik{
+    animation: premikK1 4s 0s forwards;
+}
+
 .K2 {
     width: 0;
     height: 0;
@@ -90,7 +95,13 @@ h6{
     border-left: 75px solid black;
     float: right;
     transform: translate(-48%,-104%) rotate(270deg); /* 2*2% in 4% odmik */
-    animation: premikK2 4s 2s forwards;
+}
+.K2.premik{
+    animation: premikK2 4s 0s forwards;
+}
+
+.gumbPotrdi{
+    border: 0;
 }
 
 /*Animacije*/
